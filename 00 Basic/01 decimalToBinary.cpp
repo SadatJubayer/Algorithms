@@ -1,18 +1,28 @@
-#include<iostream.h>
-#include<conio.h>
-void main()
+#include<iostream>
+using namespace std;
+
+int decimalToBinary(int x)
 {
-	clrscr();
-	long int binnum, decnum=0, i=1, rem;
-	cout<<"Enter any binary number : ";
-	cin>>binnum;
-	while(binnum!=0)
-	{
-		rem=binnum%10;
-		decnum=decnum+rem*i;
-		i=i*2;
-		binnum=binnum/10;
-	}
-	cout<<"Equivalent decimal value = "<<decnum;
-	getch();
+    long long binary = 0;
+    int remainder, i = 1, step = 1;
+
+    while (x!=0)
+    {
+        remainder = x%2;
+        x /= 2;
+        binary += remainder*i;
+        i *= 10;
+    }
+    return binary;
+}
+
+int main()
+{
+    int n;
+    cout << "Enter Decimal number : ";
+    cin >> n;
+
+	cout<<"Binary value is: "<< decimalToBinary(n);
+
+	return 0;
 }

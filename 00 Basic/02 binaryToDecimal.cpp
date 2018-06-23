@@ -1,18 +1,29 @@
 #include<iostream>
-     using namespace std;
- int main()
- {
-     long bin, dec = 0, rem, num, base = 1;
-     cout << "Enter the binary number(1s and 0s) : ";
-     cin >> num;
-     bin = num;
-     while (num > 0)
-     {
-         rem = num % 10;
-         dec = dec + rem * base;
-         base = base * 2;
-         num = num / 10;
-     }
-     cout << "The decimal equivalent of " << bin << " : " << dec << endl;
-     return 0;
- }
+using namespace std;
+
+int binaryToDecimal(int x)
+{
+    long int decimal=0, i=1, rem;
+
+	while(x!=0)
+	{
+		rem=x%10;
+		decimal=decimal+rem*i;
+		i=i*2;
+		x=x/10;
+	}
+
+	return decimal;
+}
+
+int main()
+{
+    long int binary;
+    cout<<"Enter Binary number : ";
+	cin>>binary;
+
+	cout<<"Decimal value is: "<<binaryToDecimal(binary);
+
+	return 0;
+
+}
