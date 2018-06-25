@@ -1,0 +1,1 @@
+NativeMultiplication2 (using shifting operator) is faster.
