@@ -22,6 +22,10 @@ int main()
     cout << "Enter Decimal number : ";
     cin >> n;
 
+    int n;
+    int b;
+    int c;
+
 	cout<<"Binary value is: "<< decimalToBinary(n);
 
 	return 0;
