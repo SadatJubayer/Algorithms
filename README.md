@@ -1,7 +1,10 @@
-All source codes from my Algorithm Course of AIUB 
+# All source codes from Algorithm Course
 
+
+```
 Course name: Algorithms 
 
-Course code: CSC 2211
+Course Code: CSC 2211
 
-Course instructor: AGM Zaman
+Course Instructor: AGM Zaman
+```
